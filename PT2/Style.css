@@ -1,0 +1,180 @@
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #381b1b;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #2e1515;
+            border-left: 1px solid #5a2e2e;
+        }
+
+        .cabecalho {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-bottom: 2px solid #5a2e2e;
+        }
+
+        .logo,
+        .banner {
+            flex: 1 1 50%;
+            max-height: 250px;
+            overflow: hidden;
+        }
+
+        .logo img,
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .barra-navegacao {
+            background-color: #5a2e2e;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 6px;
+        }
+
+        .barra-navegacao nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .barra-navegacao nav ul li {
+            margin: 0 15px;
+        }
+
+        .barra-navegacao nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        .barra-navegacao nav ul li a:hover {
+            background-color: #381b1b;
+        }
+
+        .conteudo-steam,
+        .sobre-jogo {
+            background-color: #4a2222;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .conteudo-steam h2,
+        .sobre-jogo h2 {
+            color: #f4c542;
+            margin-bottom: 15px;
+        }
+
+        .steam-info {
+            background-color: #2e1515;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .steam-info ul.features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 15px;
+        }
+
+        .steam-info ul.features li {
+            background-color: #5a2e2e;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .steam-info .subtitulo {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 15px;
+        }
+
+        .rodape {
+            background-color: #2e1515;
+            text-align: center;
+            padding: 15px;
+            color: #ccc;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .main-content,
+    .sidebar {
+        flex: unset;
+        padding: 10px 0;
+        width: 100%;
+        border-left: none;
+    }
+
+    .sidebar {
+        border-left: none;
+        border-top: 1px solid #5a2e2e;
+        margin-top: 20px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+    .logo,
+    .banner {
+        flex: unset;
+        max-height: 150px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .barra-navegacao nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .barra-navegacao nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .barra-navegacao nav ul li a {
+        padding: 12px 0;
+    }
+}
